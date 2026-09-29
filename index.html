@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Recovery in Dubai: Complete Guide to Vehicle Recovery Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1A1A1A;
+    --ink-soft:#5B5B58;
+    --paper:#FAFAF9;
+    --panel:#F0EFED;
+    --line:#E0DEDA;
+    --orange:#FF6B00;
+    --orange-deep:#D65A00;
+    --radius:6px;
+    --max:1140px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:'Inter', -apple-system, sans-serif;
+    font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Oswald', sans-serif;font-weight:600;line-height:1.15;
+    margin:0 0 .5em 0;color:var(--ink);letter-spacing:.2px;
+  }
+  p{margin:0 0 1.1em 0;max-width:70ch;}
+  a{color:var(--orange-deep);}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px;}
+
+  /* ---------- HEADER (single line) ---------- */
+  header.site{background:var(--ink);border-bottom:3px solid var(--orange);}
+  .header-row{
+    display:flex;align-items:center;justify-content:space-between;gap:24px;
+    padding:14px 32px;max-width:var(--max);margin:0 auto;white-space:nowrap;
+  }
+  .brand{
+    font-family:'Oswald', sans-serif;font-weight:700;font-size:20px;color:#fff;
+    flex:0 0 auto;display:flex;align-items:center;gap:9px;letter-spacing:.3px;
+    text-transform:uppercase;
+  }
+  .brand .icon{color:var(--orange);font-size:19px;}
+  nav.main-nav{display:flex;gap:24px;overflow-x:auto;flex:1 1 auto;justify-content:center;}
+  nav.main-nav a{color:rgba(255,255,255,.78);text-decoration:none;font-size:14px;font-weight:600;}
+  nav.main-nav a:hover{color:#fff;}
+  .header-cta{
+    flex:0 0 auto;background:var(--orange);color:#fff;font-weight:700;font-size:14px;
+    padding:10px 20px;border-radius:var(--radius);text-decoration:none;
+  }
+  .header-cta:hover{background:var(--orange-deep);}
+  @media (max-width:880px){ nav.main-nav{display:none;} }
+
+  /* ---------- HERO ---------- */
+  section.hero{
+    background:
+      repeating-linear-gradient(90deg, transparent, transparent 46px, rgba(255,107,0,.08) 46px, rgba(255,107,0,.08) 90px),
+      var(--ink);
+    color:#EFEFEC;
+    padding:70px 0 78px;
+  }
+  .hero-inner{max-width:800px;}
+  .badge-urgent{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--orange);color:#fff;font-weight:700;font-size:13px;
+    padding:7px 14px;border-radius:999px;margin-bottom:20px;
+    text-transform:uppercase;letter-spacing:.4px;
+  }
+  .badge-urgent i{width:7px;height:7px;border-radius:50%;background:#fff;display:inline-block;}
+  section.hero h1{color:#fff;font-size:clamp(28px,4vw,46px);max-width:19ch;margin-bottom:22px;}
+  section.hero p.lead{color:#C9C7C2;font-size:18.5px;max-width:62ch;margin-bottom:0;}
+  section.hero p.lead a{color:var(--orange);font-weight:700;text-decoration:underline;text-underline-offset:3px;}
+  section.hero p.lead a:hover{color:#fff;}
+
+  /* ---------- QUICK NAV (guide-style) ---------- */
+  .quicknav{background:#fff;border-bottom:1px solid var(--line);}
+  .quicknav .wrap{padding:16px 32px;display:flex;gap:10px;flex-wrap:wrap;}
+  .quicknav a{
+    font-size:13.5px;font-weight:600;color:var(--ink-soft);
+    background:var(--panel);padding:7px 14px;border-radius:999px;text-decoration:none;
+  }
+  .quicknav a:hover{background:var(--orange);color:#fff;}
+
+  /* ---------- GENERIC SECTIONS ---------- */
+  section.block{padding:68px 0;}
+  section.block.panel{background:var(--panel);}
+  section.block h2{font-size:clamp(24px,2.8vw,32px);max-width:24ch;}
+  section.block .kicker{
+    color:var(--orange-deep);font-weight:700;font-size:13px;letter-spacing:.4px;
+    margin-bottom:10px;text-transform:uppercase;
+  }
+  .lede{font-size:18px;color:var(--ink-soft);max-width:66ch;}
+
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  @media (max-width:800px){ .two-col{grid-template-columns:1fr;} }
+
+  blockquote.callout{
+    border-left:4px solid var(--orange);background:#fff;margin:28px 0;padding:20px 24px;
+    font-family:'Oswald', sans-serif;font-size:18px;font-weight:500;color:var(--ink);
+    max-width:62ch;border-radius:0 var(--radius) var(--radius) 0;
+  }
+  blockquote.callout a{font-weight:700;color:var(--orange-deep);}
+
+  /* ---------- CHECKLIST / DOLIST ---------- */
+  ul.check{list-style:none;margin:24px 0;padding:0;max-width:64ch;columns:2;column-gap:32px;}
+  ul.check li{position:relative;padding-left:26px;margin-bottom:12px;font-size:15.5px;break-inside:avoid;}
+  ul.check li::before{
+    content:"";position:absolute;left:0;top:6px;width:14px;height:14px;
+    border:2px solid var(--orange);border-radius:4px;
+  }
+  @media (max-width:640px){ ul.check{columns:1;} }
+
+  ul.dolist{list-style:none;margin:24px 0;padding:0;max-width:64ch;}
+  ul.dolist li{position:relative;padding-left:30px;margin-bottom:10px;font-size:15.5px;}
+  ul.dolist li::before{content:"✓";position:absolute;left:0;top:0;color:var(--orange-deep);font-weight:700;}
+
+  /* ---------- STEP LIST ---------- */
+  ol.steps{list-style:none;counter-reset:step;margin:28px 0;padding:0;max-width:66ch;}
+  ol.steps li{
+    counter-increment:step;position:relative;padding:0 0 24px 46px;
+    border-left:2px solid var(--line);margin-left:15px;
+  }
+  ol.steps li:last-child{border-left:2px solid transparent;padding-bottom:0;}
+  ol.steps li::before{
+    content:counter(step);position:absolute;left:-15px;top:0;
+    width:30px;height:30px;border-radius:50%;background:var(--orange);color:#fff;
+    font-family:'Oswald',sans-serif;font-weight:700;font-size:14px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  ol.steps strong{display:block;font-family:'Oswald',sans-serif;font-size:16.5px;color:var(--ink);margin-bottom:4px;}
+
+  /* ---------- COMPARISON TABLE ---------- */
+  .cmp-wrap{overflow-x:auto;margin-top:32px;}
+  table.cmp{width:100%;border-collapse:collapse;min-width:640px;font-size:15px;}
+  table.cmp th,table.cmp td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top;}
+  table.cmp thead th{background:var(--ink);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:15px;}
+  table.cmp tbody tr:nth-child(even){background:var(--panel);}
+  table.cmp td:first-child{font-weight:700;color:var(--ink);}
+
+  /* ---------- FAQ ---------- */
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-item summary{
+    cursor:pointer;list-style:none;padding:20px 0;font-family:'Oswald',sans-serif;
+    font-weight:600;font-size:17.5px;color:var(--ink);
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+";flex:0 0 auto;font-size:22px;color:var(--orange-deep);transition:transform .2s ease;}
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item p{padding-bottom:20px;color:var(--ink-soft);}
+
+  /* ---------- FINAL CTA ---------- */
+  section.cta-final{background:var(--ink);color:#fff;padding:64px 0;text-align:center;}
+  section.cta-final h2{color:#fff;margin:0 auto 14px;max-width:22ch;}
+  section.cta-final p{color:#C9C7C2;margin:0 auto 28px;max-width:52ch;}
+  .btn-orange{
+    display:inline-block;background:var(--orange);color:#fff;font-weight:700;
+    padding:14px 32px;border-radius:var(--radius);text-decoration:none;font-size:17px;
+  }
+  .btn-orange:hover{background:var(--orange-deep);}
+
+  /* ---------- FOOTER ---------- */
+  footer.site{background:#0E0E0E;color:#8E8E8A;padding:52px 0 28px;font-size:14.5px;}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+  @media (max-width:700px){ .footer-grid{grid-template-columns:1fr;} }
+  footer.site h5{color:#fff;font-family:'Oswald',sans-serif;font-size:15px;font-weight:600;margin:0 0 14px;text-transform:uppercase;letter-spacing:.3px;}
+  footer.site ul{list-style:none;padding:0;margin:0;}
+  footer.site li{margin-bottom:9px;}
+  footer.site a{color:#8E8E8A;text-decoration:none;}
+  footer.site a:hover{color:#fff;}
+  .social-row{display:flex;gap:12px;margin-top:6px;}
+  .social-row a{
+    width:36px;height:36px;border:1px solid rgba(255,255,255,.14);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;
+  }
+  .social-row a:hover{background:var(--orange);border-color:var(--orange);}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.1);padding-top:22px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    font-size:13px;color:#5C5C58;
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="header-row">
+    <div class="brand"><span class="icon">🛻</span>Car Recovery Abu Dhabi &amp; Dubai</div>
+    <nav class="main-nav">
+      <a href="#when">When to Recover</a>
+      <a href="#process">The Process</a>
+      <a href="#cost">Cost</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="header-cta" href="https://carrecoveryinabudubai.ae/">Request Recovery</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="badge-urgent"><i></i>Complete Guide · 24-Hour Support</div>
+    <h1>Car Recovery in Dubai: complete guide to vehicle recovery services</h1>
+    <p class="lead">
+      A vehicle breakdown can happen without warning — an engine that suddenly stops, a car that won't start, or
+      an accident that leaves the vehicle unsafe to drive. Rather than risking further damage,
+      <a href="https://carrecoveryinabudubai.ae/">Car recovery in Dubai</a>
+      provides a practical way to have your vehicle transported to a garage, dealership, home, or another
+      suitable destination.
+    </p>
+  </div>
+</section>
+
+<div class="quicknav">
+  <div class="wrap">
+    <a href="#when">When You Need It</a>
+    <a href="#reasons">Common Reasons</a>
+    <a href="#process">The Process</a>
+    <a href="#accident">After an Accident</a>
+    <a href="#cost">Cost</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap two-col">
+    <div>
+      <div class="kicker">Definition</div>
+      <h2>What does car recovery in Dubai mean?</h2>
+      <p>
+        Car recovery refers to the transportation of a vehicle that cannot safely or reliably continue its
+        journey. The vehicle may have suffered mechanical failure, accident damage, electrical problems, wheel
+        damage, or another issue that prevents normal driving.
+      </p>
+      <p>Unlike a minor roadside repair, recovery focuses on moving the vehicle to a location where it can receive further inspection or repair — the recovery method depends on the vehicle's condition.</p>
+    </div>
+    <div id="when">
+      <div class="kicker">Deciding Factor</div>
+      <h2>When should you request car recovery?</h2>
+      <p class="lede">One of the most important decisions after a breakdown is determining whether the vehicle can safely be driven.</p>
+      <ul class="check">
+        <li>The engine will not start</li>
+        <li>Serious mechanical damage</li>
+        <li>Steering or braking is unreliable</li>
+        <li>Wheels or suspension are damaged</li>
+        <li>An accident made the vehicle unsafe</li>
+        <li>A serious mechanical warning is active</li>
+        <li>The car repeatedly stops after starting</li>
+        <li>A roadside repair failed to fix it</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block panel" id="reasons">
+  <div class="wrap">
+    <div class="kicker">The Root Causes</div>
+    <h2>Common reasons for vehicle recovery</h2>
+    <p class="lede">Some situations are sudden, while others develop gradually and become serious enough to stop the vehicle.</p>
+    <p>
+      Mechanical failure is one of the most common reasons — problems involving the engine, transmission,
+      cooling system, electrical components, or other major systems may prevent the vehicle from continuing.
+      Accidents are another important reason: even when the engine still works, damaged steering, wheels,
+      suspension, bodywork, or safety systems can make driving inappropriate.
+    </p>
+    <p>Other situations include severe tyre damage, overheating, electrical failure, and vehicles that become immobilized in difficult locations.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">Know the Difference</div>
+    <h2>Roadside assistance or full vehicle recovery?</h2>
+    <p class="lede">Drivers often confuse roadside assistance with vehicle recovery — both deal with emergencies, but their purpose can differ.</p>
+    <p>Roadside assistance is generally intended to solve a problem at the vehicle's location — a battery jump start, a tyre change, or emergency fuel delivery. Recovery is more appropriate when the vehicle cannot be safely returned to normal operation at the roadside.</p>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead><tr><th>Vehicle Problem</th><th>Likely Service</th></tr></thead>
+        <tbody>
+          <tr><td>Flat battery</td><td>Battery jump start</td></tr>
+          <tr><td>Empty fuel tank</td><td>Emergency fuel delivery</td></tr>
+          <tr><td>Flat tyre with spare available</td><td>Tyre change</td></tr>
+          <tr><td>Keys locked inside</td><td>Lockout assistance</td></tr>
+          <tr><td>Major engine failure</td><td>Car recovery</td></tr>
+          <tr><td>Accident damage</td><td>Accident vehicle recovery</td></tr>
+          <tr><td>Steering or wheel damage</td><td>Specialized recovery</td></tr>
+          <tr><td>Still immobile after roadside repair</td><td>Recovery to workshop</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block panel" id="process">
+  <div class="wrap">
+    <div class="kicker">Step by Step</div>
+    <h2>How the car recovery process works</h2>
+    <ol class="steps">
+      <li><strong>Make contact</strong>The recovery process normally starts with a phone call or online request, providing details about the vehicle, location, and problem.</li>
+      <li><strong>Answer a few questions</strong>The provider asks whether the vehicle starts, whether it can roll, and whether it's on a normal road or inside a parking facility.</li>
+      <li><strong>Vehicle is assessed</strong>Once the recovery vehicle arrives, the technician determines how it should be loaded and secured.</li>
+      <li><strong>Careful transport</strong>The vehicle is transported to the agreed destination, with extra care for damaged wheels, steering, or accident-related damage.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="accident">
+  <div class="wrap">
+    <div class="kicker">After a Collision</div>
+    <h2>Accident car recovery in Dubai</h2>
+    <p class="lede">After an accident, a vehicle may look driveable even when important components have been affected — damage underneath the vehicle isn't always visible immediately.</p>
+    <p>If the steering feels abnormal, the wheels are damaged, fluids are leaking, warning lights are active, or the vehicle has suffered significant impact damage, driving away may not be appropriate.</p>
+    <blockquote class="callout">
+      The driver should first focus on personal safety and follow the
+      <a href="https://u.ae/en/information-and-services/justice-safety-and-the-law/traffic-accidents">UAE traffic accident guidance</a>.
+      Recovery arrangements can then be made once the situation is safe to manage.
+    </blockquote>
+  </div>
+</section>
+
+<section class="block panel">
+  <div class="wrap two-col">
+    <div>
+      <div class="kicker">No Ignition</div>
+      <h2>Car recovery for vehicles that won't start</h2>
+      <p>
+        A vehicle that refuses to start can have numerous causes — the battery may be discharged, but the
+        problem could also involve the starter, alternator, fuel system, ignition, or electronics. If a jump
+        start doesn't resolve the problem, repeatedly turning the ignition may not help.
+      </p>
+      <p>In such circumstances, recovery can transport the vehicle to a qualified workshop for proper diagnosis — particularly useful when roadside repairs aren't practical.</p>
+    </div>
+    <div>
+      <div class="kicker">On a Platform</div>
+      <h2>Flatbed recovery and vehicle transportation</h2>
+      <p>
+        A flatbed recovery vehicle carries the car on a raised platform rather than requiring it to travel on
+        its own wheels — useful for non-running vehicles and certain damaged or premium vehicles, or when the
+        wheels or drivetrain shouldn't be used during transportation.
+      </p>
+      <p>The correct recovery method depends on the vehicle and its condition, so the provider should receive accurate information before dispatching equipment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap two-col">
+    <div>
+      <div class="kicker">Premium Handling</div>
+      <h2>Recovery for luxury and high-performance cars</h2>
+      <p>
+        Low ground clearance, large wheels, specialized tyres, sensitive bodywork, and advanced electronic
+        systems can affect how a premium vehicle should be loaded and transported.
+      </p>
+      <p>If you own a premium vehicle, provide the exact make and model when requesting assistance, and mention unusual circumstances such as low clearance or damaged wheels.</p>
+    </div>
+    <div>
+      <div class="kicker">Tight Spaces</div>
+      <h2>Recovery from parking garages and restricted areas</h2>
+      <p>
+        Low ceilings, narrow ramps, restricted entrances, security barriers, and limited working space can
+        affect the recovery process in underground or restricted locations.
+      </p>
+      <p>When requesting recovery, explain the exact parking situation — mention the floor or level, entrance restrictions, and whether the vehicle can roll.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block panel">
+  <div class="wrap">
+    <div class="kicker">Round the Clock</div>
+    <h2>24-hour Car Recovery in Dubai</h2>
+    <p class="lede">Breakdowns don't follow normal working hours — a vehicle may stop late at night, early in the morning, during a weekend, or while travelling.</p>
+    <p>When requesting emergency recovery, provide your exact location and explain whether the vehicle is creating a traffic obstruction or positioned somewhere dangerous — clear information helps the recovery team understand the urgency and locate the vehicle more efficiently.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">Before You Call</div>
+    <h2>What information should you give the recovery provider?</h2>
+    <p class="lede">Gather basic information about the situation before requesting vehicle recovery.</p>
+    <ul class="dolist">
+      <li>Exact location</li>
+      <li>Vehicle make and model</li>
+      <li>Vehicle type — sedan, SUV, van, or sports car</li>
+      <li>Description of the problem</li>
+      <li>Whether the engine starts</li>
+      <li>Whether the vehicle can roll</li>
+      <li>Condition of the tyres and wheels</li>
+      <li>Whether steering is functioning</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block panel">
+  <div class="wrap two-col">
+    <div>
+      <div class="kicker">Choosing a Provider</div>
+      <h2>Choosing a professional car recovery service</h2>
+      <p>
+        When selecting a recovery provider, price shouldn't be the only consideration — the service needs
+        equipment appropriate for the vehicle and the circumstances.
+      </p>
+      <p>Look for a provider that offers clear communication, suitable recovery vehicles, experienced personnel, and support for different types of breakdown situations.</p>
+    </div>
+    <div id="cost">
+      <div class="kicker">What to Expect</div>
+      <h2>Car Recovery in Dubai cost</h2>
+      <p>
+        The distance between the vehicle and destination is often an important factor, but not the only one —
+        vehicle size, location, time of service, recovery method, accessibility, accident damage, and
+        specialized equipment may also affect the final price.
+      </p>
+      <p>Before confirming the service, ask what the quoted price includes and whether additional charges may apply for distance, waiting, difficult access, or special equipment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">While You Wait</div>
+    <h2>How to stay safe while waiting for recovery</h2>
+    <p class="lede">Safety should remain the first priority while waiting for a recovery vehicle.</p>
+    <p>If the vehicle is in a dangerous position, use hazard warning lights and move to a safer location when possible without creating additional risk. If you're on a busy highway or road, follow applicable roadside safety procedures and provide the recovery provider with a precise location — a landmark, road name, direction of travel, or exit number can help the team locate you.</p>
+  </div>
+</section>
+
+<section class="block panel" id="faq">
+  <div class="wrap">
+    <div class="kicker">Frequently Asked Questions</div>
+    <h2>FAQ about Car Recovery in Dubai</h2>
+
+    <details class="faq-item" open>
+      <summary>What is Car Recovery in Dubai?</summary>
+      <p>Car recovery is a vehicle transportation service for cars that cannot safely continue driving because of breakdowns, accidents, mechanical failures, wheel damage, or other problems.</p>
+    </details>
+    <details class="faq-item">
+      <summary>When should I choose recovery instead of roadside assistance?</summary>
+      <p>Recovery is generally appropriate when the vehicle cannot be safely repaired or driven at its current location. Minor issues such as a flat battery or tyre may sometimes be resolved without transporting the car.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can a recovery company collect a car that does not start?</summary>
+      <p>Yes. A non-running vehicle can often be recovered using suitable equipment. Tell the provider in advance that the engine does not start.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can accident-damaged vehicles be recovered?</summary>
+      <p>Yes. Recovery services can transport accident-damaged vehicles, but the appropriate loading method depends on the damage to the wheels, steering, suspension, body, and other components.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can a luxury car be recovered safely?</summary>
+      <p>Luxury and performance vehicles can be recovered, but they may require additional care because of low ground clearance, specialized wheels, and sensitive bodywork.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can a vehicle be recovered from underground parking?</summary>
+      <p>In many cases, yes, but the parking structure can affect which equipment is suitable. Provide the parking level, access information, and any height restrictions when requesting assistance.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is 24-hour Car Recovery in Dubai available?</summary>
+      <p>Many roadside recovery providers offer emergency assistance outside standard working hours. Availability can vary, so confirm the service when making the request.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What affects the cost of car recovery?</summary>
+      <p>Distance, vehicle type, location, time, accessibility, vehicle condition, recovery method, and additional equipment can all influence the final price.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How long does car recovery take?</summary>
+      <p>The total time depends on the vehicle's location, traffic conditions, accessibility, recovery method, and destination. Accurate location information can help reduce unnecessary delays.</p>
+    </details>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="wrap">
+    <h2>Need your vehicle recovered right now?</h2>
+    <p>Share your exact location and vehicle condition — a recovery vehicle will handle the rest.</p>
+    <a class="btn-orange" href="https://carrecoveryinabudubai.ae/">Request Recovery Now</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div style="color:#fff;font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;margin-bottom:12px;text-transform:uppercase;">Car Recovery Abu Dhabi &amp; Dubai</div>
+        <p style="max-width:40ch;color:#8E8E8A;">24-hour vehicle recovery across Dubai — breakdowns, accidents, non-starting vehicles, and difficult-access locations, handled carefully.</p>
+        <div class="social-row">
+          <a href="#" aria-label="WhatsApp" title="WhatsApp">wa</a>
+          <a href="#" aria-label="Instagram" title="Instagram">ig</a>
+          <a href="#" aria-label="Facebook" title="Facebook">fb</a>
+          <a href="#" aria-label="Google" title="Google">g</a>
+        </div>
+      </div>
+      <div>
+        <h5>Guide</h5>
+        <ul>
+          <li><a href="#when">When You Need It</a></li>
+          <li><a href="#process">The Process</a></li>
+          <li><a href="#cost">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Related Services</h5>
+        <ul>
+          <li><a href="https://carrecoveryinabudubai.ae/fuel-delivery">Fuel Delivery</a></li>
+          <li><a href="https://carrecoveryinabudubai.ae/car-lockout">Car Lockout</a></li>
+          <li><a href="https://carrecoveryinabudubai.ae/">Contact</a></li>
+          <li><a href="https://carrecoveryinabudubai.ae/">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Car Recovery Abu Dhabi &amp; Dubai. All rights reserved.</span>
+      <span>Safe recovery, wherever your journey stops.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
